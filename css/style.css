@@ -1,0 +1,239 @@
+/* General HTML CSS settings */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 110px;
+  overflow-x: hidden;
+}
+
+.logo{
+    
+}
+.logo-small{
+    width: 50px;
+}
+.footer {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    font-size: 11px;
+    width: 100%;
+    background-color: #f5f5f5;
+}
+.manual-image{
+    max-width: 100%;
+}
+.mobileshow{
+    display: none;
+}
+
+/* Facebook posts */
+.fb-page{
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 42px;
+    width: 250px !important;
+}
+.fb_iframe_widget{
+    position: absolute !important;
+}
+
+/* Time table CSS */
+.rooster-tabel thead{
+    background: #FFFFFF;
+}
+.rooster-tabel{
+    font-size: 11px;
+    table-layout : fixed;
+}
+.rooster-tabel tbody{
+    table-layout : fixed;
+}
+.rooster-tabel .left-side-column{
+    width: 40px;
+    border-right: dashed 1px;
+    height: 15px;
+}
+.rooster-tabel .subject-cell{
+    background-color: #D0F2D4;
+}
+.rooster-tabel .subject-cell:hover{
+    background-color: #BBEDC1;
+    cursor: pointer;
+}
+.rooster-tabel .currentday-column .subject-cell:hover{
+    background-color: #99ff99;
+    cursor: pointer;
+}
+.rooster-cell .infospan{
+    text-decoration: underline;
+}
+.rooster-tabel th{
+    padding: 1px !important;
+
+}
+.rooster-header{
+    position: fixed;
+    z-index: 1;
+    margin: 0px;
+    width: 100%;
+    height: 80px;
+    top: 0px;
+    padding-top: 20px;
+    background: -webkit-linear-gradient(#FAFAFA, #F0F0F0); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#FAFAFA, #F0F0F0); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#FAFAFA, #F0F0F0); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#FAFAFA, #F0F0F0); /* Standard syntax */
+    border-bottom: solid #D9DBDB 1px;
+}
+.rooster-body{
+    padding-top: 120px;
+    margin-bottom: 0px;
+}
+.rooster-tabel td{
+    padding: 1px !important;
+    word-wrap: break-word;
+}
+.currentday-column{
+    background-color: #f1f1f1;
+}
+.currentday-column.subject-cell{
+    background-color: #a7eaaf;
+}
+
+.container {
+  width: auto;
+  max-width: 700px;
+  padding: 0 15px;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+.day-column{
+    width: 21%;
+    height: 15px;
+    border-right: dashed 1px;
+}
+.rooster-container{
+    padding: 10px;
+    padding-top: 5px;
+}
+.rooster-agenda-header h3{
+    margin-top: 5px;
+}
+.rooster-agenda-header{
+    position: fixed;
+    top: 80px;
+    background: #FFF;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/*
+ * Masthead for nav
+ */
+
+.blog-masthead {
+  background-color: #428bca;
+  -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+          box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+}
+
+/* Nav links */
+.blog-nav-item {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  font-weight: 500;
+  color: #cdddeb;
+}
+.blog-nav-item:hover,
+.blog-nav-item:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Active state gets a caret at the bottom */
+.blog-nav .active {
+  color: #fff;
+}
+.blog-nav .active:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -5px;
+  vertical-align: middle;
+  content: " ";
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid;
+  border-left: 5px solid transparent;
+}
+
+
+/*
+ * Blog name and description
+ */
+
+.blog-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.blog-title {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 60px;
+  font-weight: normal;
+}
+.blog-description {
+  font-size: 20px;
+  color: #999;
+}
+
+
+/*
+ * Main column and sidebar layout
+ */
+
+.blog-main {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 1220px) {
+    .fb-page{
+        display: none !important;
+    }
+}
+@media screen and (max-width: 991px) {
+    .mobilehide{
+        display: none;
+    }
+    .mobileshow{
+        display: inline;
+    }
+    .rooster-header{
+        height: 50px;
+        padding-top: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .rooster-body{
+        padding-top: 70px;
+    }
+    .rooster-agenda-header{
+        top: 50px;
+    }
+    h3{
+        font-size: 19px;
+    }
+    h4{
+        font-size: 15px;
+    }
+}
